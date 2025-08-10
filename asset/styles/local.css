@@ -1,0 +1,344 @@
+@media screen and (max-width: 576px) {
+  header > nav > figure {
+    width: 80%;
+  }
+  header > nav > ul {
+    display: none;
+  }
+  header > nav > div:nth-of-type(1) {
+    display: none;
+  }
+  header > nav > div:nth-of-type(2) {
+    width: 20%;
+    display: flex;
+  }
+  header > nav > div:nth-of-type(2) > figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header > nav > div:nth-of-type(2) > figure > img {
+    width: 32px;
+    height: 32px;
+  }
+  header > #header-content {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 576px) {
+  header > nav {
+    align-items: center;
+  }
+  header > nav > figure {
+    width: 50%;
+  }
+  header > nav > ul {
+    display: none;
+  }
+  header > nav > div:nth-of-type(1) {
+    width: 40%;
+    display: flex;
+  }
+  header > nav > div:nth-of-type(1) > span {
+    font-size: 16px;
+  }
+  header > nav > div:nth-of-type(2) {
+    display: flex;
+    width: 10%;
+  }
+  header > nav > div:nth-of-type(2) > figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header > nav > div:nth-of-type(2) > figure > img {
+    width: 32px;
+    height: 32px;
+  }
+  header > #header-content {
+    align-items: center;
+  }
+  #singUp > div {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #singUp > div {
+    height: 280px;
+  }
+  header > #header-content {
+    align-items: center;
+  }
+  #explore > div > span {
+    width: 48%;
+  }
+  #games > h2 {
+    font-size: 24px;
+  }
+  #games > div > span {
+    width: 48%;
+  }
+  #comment > div > h2 {
+    font-size: 35px;
+  }
+  #comment > div > h3 {
+    font-size: 18px;
+  }
+  #players > div > div {
+    width: 48%;
+    height: 200px;
+    padding: 15px;
+    background-color: #0a1113;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #players > div > div:nth-of-type(2) {
+    display: flex;
+  }
+  #players > div > div:nth-of-type(3) {
+    display: none;
+  }
+  #tournaments > h2 {
+    color: white;
+    text-transform: capitalize;
+    font-family: "SemiBold";
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+  #tournaments > div > span {
+    width: 48%;
+    margin-bottom: 15px;
+  }
+  #tournaments > div > span > div > div:nth-of-type(1) > h3 {
+    font-size: 25px;
+  }
+  #tournaments > div > span > div > div:nth-of-type(2) > span {
+    font-size: 8px;
+  }
+  #streaming > h2 {
+    color: white;
+    text-transform: capitalize;
+    font-family: "SemiBold";
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+  #streaming > div > span {
+    width: 48%;
+    margin-bottom: 15px;
+  }
+  #streaming > div > span > div > div:nth-of-type(1) > h3 {
+    font-size: 25px;
+  }
+  #singUp > div > h2 {
+    font-size: 30px;
+  }
+  #singUp > div > a {
+    margin-top: 20px;
+  }
+  #update > div > span {
+    width: 48%;
+  }
+  #connected > div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  #connected > div:nth-of-type(2) > form {
+    display: flex;
+    justify-content: space-between;
+  }
+  #connected > div:nth-of-type(2) > form > input {
+    width: 70%;
+  }
+  #connected > div:nth-of-type(2) > form > button {
+    width: 20%;
+    margin-top: 0;
+  }
+  footer > section > div:nth-of-type(1) {
+    width: 100%;
+  }
+  footer > section > div:nth-of-type(2) {
+    width: 33%;
+  }
+  footer > section > div:nth-of-type(3) {
+    width: 33%;
+  }
+  footer > section > div:nth-of-type(4) {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 992px) {
+  header > #header-content {
+    align-items: start;
+  }
+  #comment > div > h2 {
+    font-size: 47px;
+  }
+  #comment > div > p {
+    width: 60%;
+  }
+  #players > div > div {
+    width: 32%;
+    height: 200px;
+    padding: 15px;
+    background-color: #0a1113;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #players > div > div:nth-of-type(2) {
+    display: flex;
+  }
+  #players > div > div:nth-of-type(3) {
+    display: flex;
+  }
+  #players > div > div > div > figure > div > h3 {
+    font-size: 13px;
+    color: white;
+    text-transform: capitalize;
+    font-family: "SemiBold";
+  }
+  #tournaments > h2 {
+    color: white;
+    text-transform: capitalize;
+    font-family: "SemiBold";
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+  #tournaments > div > span {
+    width: 48%;
+    margin-bottom: 15px;
+  }
+  #tournaments > div > span > div > div:nth-of-type(1) > h3 {
+    font-size: 35px;
+  }
+  #tournaments > div > span > div > div:nth-of-type(2) > span {
+    font-size: 14px;
+  }
+  #streaming > h2 {
+    color: white;
+    text-transform: capitalize;
+    font-family: "SemiBold";
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+  #streaming > div > span {
+    width: 32%;
+    margin-bottom: 15px;
+  }
+  #streaming > div > span > div > div:nth-of-type(1) > div > h3 {
+    font-size: 14px;
+  }
+  #singUp > div {
+    height: 360px;
+  }
+  #singUp > div > h2 {
+    font-size: 38px;
+  }
+  #update > div > span {
+    width: 24%;
+  }
+  #update > div > span > div > div:nth-of-type(1) > h3 {
+    font-size: 20px;
+  }
+  #update > div > span > div > div:nth-of-type(1) > h6 {
+    font-size: 14px;
+  }
+  #connected {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #connected > div:nth-of-type(1) {
+    width: 35% !important;
+  }
+  #connected > div:nth-of-type(2) {
+    width: 60% !important;
+  }
+  #connected > div:nth-of-type(2) > form > input {
+    width: 78%;
+  }
+  #connected > div:nth-of-type(2) > form > button {
+    width: 20%;
+  }
+  footer > section {
+    justify-content: space-between;
+  }
+  footer > section > div {
+    width: 23% !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header > nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+  header > nav > figure {
+    width: 14% !important;
+  }
+  header > nav > ul {
+    width: 71% !important;
+    display: flex;
+  }
+  header > nav > ul > li > a {
+    font-size: 14px;
+  }
+  header > nav > div:nth-of-type(1) {
+    width: 15% !important;
+    display: flex;
+  }
+  header > nav > div:nth-of-type(1) > span {
+    font-size: 16px;
+  }
+  header > nav > div:nth-of-type(2) {
+    display: none;
+  }
+  header > nav > div:nth-of-type(2) > figure > img {
+    width: 32px;
+    height: 32px;
+  }
+  #explore > div > span {
+    width: 24%;
+    height: 204px;
+  }
+  #explore > div > span > h5 {
+    font-size: 23px;
+  }
+  #explore > div > span > p {
+    font-size: 15px;
+    text-align: center;
+  }
+  #games > h2 {
+    font-size: 34px;
+  }
+  #games > div > span {
+    width: 24%;
+  }
+  #players > div > div > div > figure > div > h3 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    font-family: "SemiBold";
+  }
+  #streaming > div > span > div > div:nth-of-type(1) > div > h3 {
+    font-size: 24px;
+  }
+  #singUp > div {
+    height: 400px;
+  }
+  #singUp > div > h2 {
+    font-size: 47px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  header > nav > ul > li > a {
+    font-size: 20px;
+  }
+  header > nav > div:nth-of-type(1) > span {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=local.css.map */

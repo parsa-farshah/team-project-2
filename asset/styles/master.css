@@ -1,0 +1,1223 @@
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(122, 122, 122);
+}
+header > nav {
+  width: 100%;
+  background-color: black;
+  height: 80px;
+  display: flex;
+  padding-inline: 5%;
+}
+header > nav > * {
+  height: 100%;
+}
+header > nav > figure {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header > nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header > nav > ul > li {
+  color: white;
+  text-transform: capitalize;
+  font-family: "Regular";
+  font-size: 20px;
+  display: flex;
+  position: relative;
+}
+header > nav > ul > li > a {
+  padding-inline: 25px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+header > nav > ul > li > a > i {
+  margin-left: 5px;
+  padding-top: 3px;
+}
+header > nav > ul > li > ul {
+  width: 250px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-image: url(../img/bg-section-1.png);
+  background-size: cover;
+  background-position: center;
+  transform-origin: top;
+  transform: scaleY(0);
+}
+header > nav > ul > li > ul > li {
+  padding-block: 10px;
+  padding-left: 50px;
+  font-size: 16px;
+  font-family: "Medium";
+  transition: 0.4s ease;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+header > nav > ul > li > ul > li:hover {
+  background-color: rgba(22, 151, 187, 0.3019607843);
+}
+header > nav > ul > li:first-of-type {
+  color: #1698bb;
+}
+header > nav > ul > li:hover > a {
+  color: #1698bb;
+}
+header > nav > ul > li:hover > ul {
+  transform: scaleY(1);
+  transition: 0.3s ease-in-out;
+}
+header > nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header > nav > div > a {
+  color: white;
+  font-size: 25px;
+  padding-top: 3px;
+}
+header > nav > div > figure {
+  width: 48px;
+  height: 48px;
+  margin-inline: 20px 10px;
+}
+header > nav > div > figure > img {
+  width: 100%;
+}
+header > nav > div span {
+  display: flex;
+  color: white;
+  text-transform: capitalize;
+  font-family: "Regular";
+  font-size: 20px;
+}
+header > nav > div span > i {
+  margin-left: 5px;
+  padding-top: 3px;
+}
+header #header-content {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-image: url(../img/hero-large.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 5%;
+}
+header #header-content > h2 {
+  color: white;
+  font-family: "SemiBold";
+  font-size: 1.6515vw;
+}
+header #header-content > h1 {
+  color: white;
+  font-family: "SemiBold";
+  font-size: 3.958vw;
+  margin-bottom: 10px;
+}
+header #header-content > figure {
+  margin-bottom: 25px;
+}
+header #header-content > figure > img {
+  width: 250px;
+}
+header #header-content > p {
+  font-size: 1.045vw;
+  color: white;
+  font-family: "Medium";
+  margin-bottom: 50px;
+}
+header #header-content > div {
+  display: flex;
+}
+header #header-content > div > a {
+  padding: 12px 32px;
+  text-transform: capitalize;
+  font-family: "Medium";
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+}
+header #header-content > div > a:nth-of-type(1) {
+  background-color: #1698bb;
+  color: white;
+}
+header #header-content > div > a:nth-of-type(1):hover {
+  background-color: white;
+  color: #1698bb;
+}
+header #header-content > div > a:nth-of-type(2) {
+  background-color: white;
+  color: #1698bb;
+  margin-left: 25px;
+}
+header #header-content > div > a:nth-of-type(2):hover {
+  background-color: #1698bb;
+  color: white;
+}
+
+main {
+  width: 100%;
+  padding-bottom: 80px;
+  background-image: url(../img/bg-section-1.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#explore {
+  width: 100%;
+  padding-top: 80px;
+  padding-inline: 5%;
+}
+#explore > h2 {
+  color: white;
+  text-transform: capitalize;
+  font-family: "SemiBold";
+  font-size: 3.177vw;
+  margin-bottom: 50px;
+}
+#explore > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#explore > div > span {
+  display: flex;
+  width: 100%;
+  border: 1px solid #141516;
+  height: 157px;
+  background: rgba(22, 152, 187, 0.05);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+#explore > div > span > * {
+  margin-bottom: 5px;
+}
+#explore > div > span > figure {
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #45474f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease-in-out;
+  margin-bottom: 5px;
+}
+#explore > div > span > figure > img {
+  width: 32px;
+  height: 32px;
+}
+#explore > div > span:last-of-type > figure > img {
+  width: 80px;
+}
+#explore > div > span > h5 {
+  color: white;
+  font-size: 17px;
+  font-family: "Medium";
+  text-transform: capitalize;
+}
+#explore > div > span > p {
+  font-size: 15px;
+  color: #92949f;
+  font-family: "Medium";
+  text-transform: capitalize;
+}
+#explore > div > span:hover > figure {
+  background-color: #1698bb;
+}
+
+#games {
+  width: 100%;
+  padding-top: 90px;
+  padding-inline: 5%;
+}
+#games > h2 {
+  color: white;
+  text-transform: capitalize;
+  font-family: "SemiBold";
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+#games > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#games > div > span {
+  width: 100%;
+  height: 550px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+#games > div > span::before {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  left: -90%;
+  position: absolute;
+  top: 0;
+  transform: skewX(25deg);
+  width: 30%;
+  z-index: 3;
+  pointer-events: none;
+}
+#games > div > span > figure {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  transform-origin: center;
+}
+#games > div > span > figure > img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+#games > div > span > div {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding-inline: 10px;
+  padding-bottom: 10px;
+}
+#games > div > span > div > h2 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 23px;
+  font-family: "SemiBold";
+  transition: 0.4s ease-in-out;
+}
+#games > div > span > div > p {
+  font-size: 15px;
+  color: white;
+  font-family: "Regular";
+}
+#games > div > span > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+#games > div > span > div > div > div {
+  display: flex;
+  flex-direction: column;
+}
+#games > div > span > div > div > div > span {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: white;
+  font-family: "Regular";
+}
+#games > div > span > div > div > div > span > i {
+  color: gold;
+}
+#games > div > span:hover {
+  box-shadow: 0px 60px 46px -60px #1698bb;
+}
+#games > div > span:hover::before {
+  animation: shine 0.65s;
+}
+#games > div > span:hover > figure {
+  transform: scale(1.1);
+}
+#games > div > span:hover > div > h2 {
+  color: gold;
+}
+
+#comment {
+  width: 100%;
+  margin-top: 70px;
+  padding-inline: 5%;
+}
+#comment > div {
+  padding-block: 120px;
+  background-image: url(../img/testimonials-bg.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#comment > div > h2 {
+  color: white;
+  font-size: 29px;
+  font-family: "Medium";
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#comment > div > h3 {
+  color: white;
+  font-size: 17px;
+  font-family: "SemiBold";
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 35px;
+}
+#comment > div > p {
+  width: 80%;
+  color: white;
+  font-size: 15px;
+  font-family: "Regular";
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#comment > div > div {
+  width: 280px;
+  padding: 8px 16px;
+  background-color: #1698bb;
+  display: flex;
+  justify-content: space-between;
+}
+#comment > div > div > div {
+  display: flex;
+  flex-direction: column;
+}
+#comment > div > div > div > span {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: white;
+  font-family: "Regular";
+}
+#comment > div > div > div > span > i {
+  color: gold;
+}
+#comment > div > div > div:last-of-type {
+  align-items: flex-end;
+}
+
+#players {
+  width: 100%;
+  margin-top: 90px;
+  padding-inline: 5%;
+}
+#players > h2 {
+  color: white;
+  text-transform: capitalize;
+  font-family: "SemiBold";
+  font-size: 29px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#players > div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#players > div > div {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  background-color: #0a1113;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:nth-of-type(2) {
+    display: none;
+  }
+  &:nth-of-type(3) {
+    display: none;
+  }
+}
+#players > div > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#players > div > div > div > figure {
+  display: flex;
+}
+#players > div > div > div > figure > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+#players > div > div > div > figure > div > h3 {
+  font-size: 20px;
+  color: white;
+  text-transform: capitalize;
+  font-family: "SemiBold";
+}
+#players > div > div > div > figure > div > h6 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-family: "Regular";
+}
+#players > div > div > div > span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #92949f;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+#players > div > div > div > span > i {
+  font-size: 22px;
+  color: #92949f;
+  transition: 0.3s ease-in-out;
+}
+#players > div > div > div > span:hover {
+  border: 1px solid gold;
+}
+#players > div > div > div > span:hover > i {
+  color: gold;
+}
+#players > div > div > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#players > div > div > ul > li > h6 {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-family: "Regular";
+  color: #92949f;
+  margin-bottom: 5px;
+}
+#players > div > div > ul > li > div {
+  display: flex;
+  color: gold;
+}
+#players > div > div > ul > li > p {
+  color: white;
+  text-transform: capitalize;
+  font-family: "15px";
+  font-family: "Regular";
+}
+
+#tournaments {
+  width: 100%;
+  padding-top: 90px;
+  padding-inline: 5%;
+}
+#tournaments > h2 {
+  color: white;
+  text-transform: capitalize;
+  font-family: "SemiBold";
+  font-size: 29px;
+}
+#tournaments > div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+#tournaments > div > span {
+  width: 100%;
+  background-color: #080f12;
+  cursor: pointer;
+  position: relative;
+}
+#tournaments > div > span > figure {
+  height: 60%;
+  overflow: hidden;
+  position: relative;
+}
+#tournaments > div > span > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transform-origin: center;
+  transition: 0.4s ease-in-out;
+}
+#tournaments > div > span > figure::before {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  left: -90%;
+  position: absolute;
+  top: 0;
+  transform: skewX(25deg);
+  width: 30%;
+  z-index: 3;
+  pointer-events: none;
+}
+#tournaments > div > span > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5px;
+}
+#tournaments > div > span > div > div {
+  width: 100%;
+}
+#tournaments > div > span > div > div:nth-of-type(1) > h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 23px;
+  font-family: "SemiBold";
+  transition: 0.4s ease-in-out;
+}
+#tournaments > div > span > div > div:nth-of-type(1) > h6 {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #92949f;
+  font-family: "Regular";
+}
+#tournaments > div > span > div > div:nth-of-type(2) {
+  display: flex;
+}
+#tournaments > div > span > div > div:nth-of-type(2) > span {
+  border: 2px solid #1698bb;
+  color: white;
+  text-transform: capitalize;
+  padding: 4px 8px;
+  margin-right: 20px;
+  font-size: 13px;
+  font-family: "Regular";
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#tournaments > div > span > div > div:nth-of-type(3) {
+  display: flex;
+}
+#tournaments > div > span > div > div:nth-of-type(3) > span {
+  display: flex;
+  font-size: 15px;
+  color: #fafafa;
+  font-family: "Regular";
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+#tournaments > div > span > div > div:nth-of-type(3) > span > i {
+  color: #1698bb;
+  margin-right: 10px;
+}
+#tournaments > div > span > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: #1698bb;
+}
+#tournaments > div > span > span > i {
+  transition: 0.4s linear;
+}
+#tournaments > div > span:hover > figure > img {
+  transform: scale(1.1);
+}
+#tournaments > div > span:hover > figure::before {
+  animation: shine 0.65s;
+}
+#tournaments > div > span:hover > div > div:nth-of-type(1) > h3 {
+  color: gold;
+}
+#tournaments > div > span:hover > span > i {
+  transform: rotate(-45deg);
+}
+
+#streaming {
+  width: 100%;
+  padding-top: 90px;
+  padding-inline: 5%;
+}
+#streaming > h2 {
+  color: white;
+  text-transform: capitalize;
+  font-family: "SemiBold";
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+#streaming > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 200px;
+  padding-bottom: 185px;
+}
+#streaming > div > span {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+#streaming > div > span > figure {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#streaming > div > span > figure > img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+#streaming > div > span > div {
+  width: 100%;
+  height: 185px;
+  padding: 15px;
+  background: rgba(22, 152, 187, 0.05);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  z-index: 2;
+  top: 95%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#streaming > div > span > div > div {
+  width: 100%;
+  display: flex;
+}
+#streaming > div > span > div > div:nth-of-type(1) > div {
+  margin-left: 20px;
+}
+#streaming > div > span > div > div:nth-of-type(1) > div > h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 23px;
+  font-family: "SemiBold";
+  transition: 0.4s ease-in-out;
+  margin-bottom: 5px;
+}
+#streaming > div > span > div > div:nth-of-type(1) > div > h6 {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #92949f;
+  font-family: "Regular";
+}
+#streaming > div > span > div > div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#streaming > div > span > div > div:nth-of-type(2) > span {
+  display: flex;
+  font-size: 15px;
+  color: #fafafa;
+  font-family: "Regular";
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+#streaming > div > span > div > div:nth-of-type(2) > span > i {
+  color: #1698bb;
+  margin-right: 10px;
+}
+#streaming > div > span > div > div:nth-of-type(2) > a {
+  width: 160px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #1698bb;
+  text-transform: capitalize;
+  font-family: "Medium";
+  font-size: 18px;
+  color: #1698bb;
+  transition: all 0.3s ease-in-out;
+}
+#streaming > div > span > div > div:nth-of-type(2) > a:hover {
+  background-color: white;
+}
+#streaming > div > span:hover > div {
+  top: 90%;
+}
+#streaming > div > span:hover > div > div:nth-of-type(1) > div > h3 {
+  color: gold;
+}
+
+#singUp {
+  width: 100%;
+  margin-top: 90px;
+  padding-inline: 5%;
+  padding: 50px;
+}
+#singUp > div {
+  width: 100%;
+  height: 206px;
+  background-image: url(../img/signup-bg.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#singUp > div > h2 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 29px;
+  font-family: "Medium";
+  text-align: center;
+}
+#singUp > div > a {
+  color: white;
+  background-color: #1698bb;
+  padding: 6px 32px;
+  font-size: 15px;
+  font-family: "Medium";
+  text-transform: capitalize;
+  margin-top: 10px;
+  transition: 0.4s ease-in-out;
+}
+#singUp > div > a:hover {
+  background-color: white;
+  color: #1698bb;
+}
+
+#update {
+  width: 100%;
+  padding-top: 90px;
+  padding-inline: 5%;
+}
+#update > h2 {
+  color: white;
+  text-transform: capitalize;
+  font-family: "SemiBold";
+  font-size: 29px;
+  margin-bottom: 50px;
+}
+#update > div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+}
+#update > div > span {
+  width: 100%;
+  background-color: #020a0d;
+  cursor: pointer;
+}
+#update > div > span > figure {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#update > div > span > figure > img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.4s ease-in-out;
+}
+#update > div > span > figure::before {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  left: -90%;
+  position: absolute;
+  top: 0;
+  transform: skewX(25deg);
+  width: 30%;
+  z-index: 3;
+  pointer-events: none;
+}
+#update > div > span > div {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#update > div > span > div > div {
+  width: 100%;
+}
+#update > div > span > div > div:nth-of-type(1) > h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 23px;
+  font-family: "SemiBold";
+  transition: 0.4s ease-in-out;
+  margin-bottom: 5px;
+}
+#update > div > span > div > div:nth-of-type(1) > h6 {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #92949f;
+  font-family: "Regular";
+}
+#update > div > span > div > div:nth-of-type(2) {
+  display: flex;
+  justify-content: flex-end;
+}
+#update > div > span > div > div:nth-of-type(2) > a {
+  width: 160px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #1698bb;
+  text-transform: capitalize;
+  font-family: "Medium";
+  font-size: 14px;
+  color: #1698bb;
+  transition: all 0.3s ease-in-out;
+  margin-top: 30px;
+}
+#update > div > span > div > div:nth-of-type(2) > a:hover {
+  background-color: white;
+}
+#update > div > span:hover > figure > img {
+  transform: scale(1.1);
+}
+#update > div > span:hover > figure::before {
+  animation: shine 0.65s;
+}
+#update > div > span:hover > div > div:nth-of-type(1) > h3 {
+  color: gold;
+}
+
+#connected {
+  width: 100%;
+  background-image: url(../img/newsletter-bg.png);
+  background-position: center;
+  background-size: cover;
+  margin-top: 90px;
+  padding-inline: 5%;
+  padding-block: 100px;
+}
+#connected > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#connected > div:nth-of-type(1) {
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+#connected > div:nth-of-type(1) > h2 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 29px;
+  font-family: "Medium";
+  margin-bottom: 10px;
+}
+#connected > div:nth-of-type(1) > p {
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  font-family: "Regular";
+  text-align: justify;
+}
+#connected > div:nth-of-type(2) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+#connected > div:nth-of-type(2) > form {
+  width: 100%;
+  height: 48px;
+}
+#connected > div:nth-of-type(2) > form > * {
+  height: 100%;
+}
+#connected > div:nth-of-type(2) > form > input {
+  width: 100%;
+  padding-inline: 16px;
+  font-size: 24px;
+  font-family: "Regular";
+  color: black;
+}
+#connected > div:nth-of-type(2) > form > input::-moz-placeholder {
+  color: #92949f;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: "Regular";
+}
+#connected > div:nth-of-type(2) > form > input::placeholder {
+  color: #92949f;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: "Regular";
+}
+#connected > div:nth-of-type(2) > form > input:focus {
+  outline: none;
+  border: none;
+}
+#connected > div:nth-of-type(2) > form > button {
+  width: 30%;
+  font-size: 14px;
+  color: white;
+  background-color: #1698bb;
+  padding-inline: 32px;
+  font-family: "Medium";
+  text-transform: capitalize;
+  transition: 0.4s ease-in-out;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+}
+#connected > div:nth-of-type(2) > form > button:hover {
+  background-color: white;
+  color: #1698bb;
+}
+
+#team {
+  width: 100%;
+  padding-top: 90px;
+  padding-inline: 5%;
+}
+#team > h2 {
+  color: white;
+  text-transform: capitalize;
+  font-family: "SemiBold";
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+#team > div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+#team > div > span {
+  width: 415px;
+  height: 590px;
+  background-color: #020a0d;
+  cursor: pointer;
+}
+#team > div > span > figure {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  position: relative;
+}
+#team > div > span > figure > img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: 0.4s ease-in-out;
+}
+#team > div > span > figure::before {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  left: -90%;
+  position: absolute;
+  top: 0;
+  transform: skewX(25deg);
+  width: 30%;
+  z-index: 3;
+  pointer-events: none;
+}
+#team > div > span > div {
+  width: 100%;
+  height: 30%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#team > div > span > div > div {
+  width: 100%;
+}
+#team > div > span > div > div:nth-of-type(1) > h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-family: "SemiBold";
+  transition: 0.4s ease-in-out;
+  margin-bottom: 5px;
+  text-align: center;
+}
+#team > div > span > div > div:nth-of-type(1) > h6 {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #92949f;
+  font-family: "Regular";
+  text-align: center;
+}
+#team > div > span > div > div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+}
+#team > div > span > div > div:nth-of-type(2) > a {
+  width: 70px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #1698bb;
+  text-transform: capitalize;
+  font-family: "Medium";
+  font-size: 18px;
+  color: #1698bb;
+  transition: all 0.3s ease-in-out;
+}
+#team > div > span > div > div:nth-of-type(2) > a:hover {
+  background-color: white;
+}
+#team > div > span:hover > figure > img {
+  transform: scale(1.1);
+}
+#team > div > span:hover > figure::before {
+  animation: shine 0.65s;
+}
+#team > div > span:hover > div > div:nth-of-type(1) > h3 {
+  color: gold;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  padding-top: 65px;
+  padding-inline: 5%;
+}
+footer > section {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+footer > section > div {
+  height: 100%;
+  display: flex;
+  &:nth-of-type(1) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &:nth-of-type(2) {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+  &:nth-of-type(3) {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+  &:nth-of-type(4) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* footer > section > div:nth-of-type(2),
+footer > section > div:nth-of-type(3),
+footer > section > div:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+} */
+footer > section > div > figure {
+  margin-bottom: 25px;
+}
+footer > section > div > h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 32px;
+  font-family: "Medium";
+  margin-bottom: 25px;
+}
+footer > section > div > p {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #92949f;
+  font-family: "Regular";
+}
+footer > section > div > ul {
+  width: 100%;
+}
+footer > section > div > ul > li {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #92949f;
+  font-family: "Regular";
+  padding-bottom: 10px;
+}
+footer > section > div > ul > li > a {
+  transition: 0.4s ease-in-out;
+}
+footer > section > div > ul > li > a:hover {
+  color: #1698bb;
+}
+footer > section > div > div {
+  display: flex;
+}
+footer > section > div > div > a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1698bb;
+  margin-right: 15px;
+  transition: 0.4s ease-in-out;
+  color: white;
+  font-size: 20px;
+}
+footer > section > div > div > a:hover {
+  background-color: gold;
+}
+footer > a {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+footer > a > figure {
+  width: 100%;
+}
+footer > a > figure > img {
+  max-width: 100%;
+} /*# sourceMappingURL=master.css.map */
